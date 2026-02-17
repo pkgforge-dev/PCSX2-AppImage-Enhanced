@@ -8,11 +8,11 @@ export ARCH VERSION
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.bg.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
-export ICON=/usr/share/icons/hicolor/512x512/apps/PCSX2.png
+export ICON=/usr/share/pixmaps/pcsx2.png
 export DESKTOP=/usr/share/applications/pcsx2.desktop
 
 # Deploy dependencies
-quick-sharun /usr/bin/pcsx2-qt /usr/lib/pcsx2
+quick-sharun /usr/bin/pcsx2 /usr/share/pcsx2/resources/
 
 # Additional changes can be done in between here
 
