@@ -12,7 +12,7 @@ export ICON=/usr/share/pixmaps/pcsx2.png
 export DESKTOP=/usr/share/applications/pcsx2.desktop
 
 # Deploy dependencies
-quick-sharun /usr/bin/pcsx2-qt /usr/share/pcsx2/resources/
+quick-sharun /usr/bin/pcsx2 /usr/share/pcsx2/resources/
 
 # Additional changes can be done in between here
 
