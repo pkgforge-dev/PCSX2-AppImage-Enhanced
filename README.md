@@ -4,7 +4,7 @@
 
 [![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/PCSX2-AppImage-Enhanced/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/PCSX2-AppImage-Enhanced/releases/latest)
 [![CI Build Status](https://github.com//pkgforge-dev/PCSX2-AppImage-Enhanced/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/PCSX2-AppImage-Enhanced/releases/latest)
-[![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/TEMPLATE-AppImage)](https://github.com/pkgforge-dev/TEMPLATE-AppImage/releases/latest)
+[![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/PCSX2-AppImage-Enhanced)](https://github.com/pkgforge-dev/PCSX2-AppImage-Enhanced/releases/latest)
 
 <p align="center">
   <img src="https://github.com/pkgforge-dev.png" width="128" />
