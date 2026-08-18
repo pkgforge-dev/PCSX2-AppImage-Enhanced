@@ -11,7 +11,7 @@
 </p>
 
 
-| Latest Stable Release | Upstream URL |
+| Latest Nightlies Release | Upstream URL |
 | :---: | :---: |
 | [Click here](https://github.com/pkgforge-dev/PCSX2-AppImage-Enhanced/releases) | [Click here](https://github.com/PCSX2/pcsx2) |
 
