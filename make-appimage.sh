@@ -6,7 +6,7 @@ ARCH=$(uname -m)
 VERSION=$(pacman -Q pcsx2-git | awk '{print $2; exit}') # example command to get version of application here
 export ARCH VERSION
 export OUTPATH=./dist
-export ADD_HOOKS="self-updater.bg.hook"
+export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=/usr/share/pixmaps/pcsx2.png
 export DESKTOP=/usr/share/applications/pcsx2.desktop
