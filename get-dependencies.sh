@@ -70,6 +70,10 @@ else
 	TAG=$(curl -fsSL https://api.github.com/repos/PCSX2/pcsx2/releases/latest | grep -o '"tag_name": *"[^"]*"' | head -n 1 | cut -d'"' -f4)
 	git checkout "$TAG"
 	echo "${TAG#v}" > ~/version
+
+	if ! grep -q 'avcodec_get_supported_config' pcsx2/GS/GSCapture.cpp; then
+		patch -p1 < ../patches/0001-ffmpeg-get-supported-config.patch
+	fi
 fi
 
 curl -fsSL --retry 5 --retry-connrefused \
