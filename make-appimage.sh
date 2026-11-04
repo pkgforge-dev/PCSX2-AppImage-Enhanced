@@ -3,21 +3,17 @@
 set -eu
 
 ARCH=$(uname -m)
-VERSION=$(pacman -Q pcsx2-git | awk '{print $2; exit}') # example command to get version of application here
-export ARCH VERSION
+export ARCH
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
-export ICON=/usr/share/pixmaps/pcsx2.png
-export DESKTOP=/usr/share/applications/pcsx2.desktop
+export ICON=/usr/share/icons/hicolor/512x512/apps/PCSX2.png
+export DESKTOP=/usr/share/applications/PCSX2.desktop
 export DEPLOY_VULKAN=1
 export DEPLOY_OPENGL=1
 
-
 # Deploy dependencies
-quick-sharun /usr/bin/pcsx2 /usr/lib/libshaderc* /usr/share/pcsx2/
-
-# Additional changes can be done in between here
+quick-sharun /usr/bin/pcsx2-qt /usr/lib/libshaderc* /usr/share/PCSX2
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
